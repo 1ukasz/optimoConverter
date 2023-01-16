@@ -6,11 +6,26 @@
   </head>
   <body>
     <h1>Converter</h1>
-    <textarea id="input" spellcheck="false"></textarea>
+    <textarea id="input" spellcheck="false" placeholder="regularReels: {
+        features: {
+          game_set_selector: { values: [1] },
+          cell_randomizer: { values: [4] },
+          cash_scatter: {values: [5000,800]}
+        },
+        stops: [[0,0,0,0,0]]
+      }
+"></textarea>
     <br>
     <button id="convert-button">Convert</button>
     <br>
-    <textarea id="output" spellcheck="false"></textarea>
+    <textarea id="output" spellcheck="false" placeholder='"regular": {
+        "features": {
+          "game_set_selector": { "values": [1] },
+          "cell_randomizer": { "values": [4] },
+          "cash_scatter": {"values": [5000,800]}
+        },
+        "stops": [[0,0,0,0,0]]
+      }''></textarea>
     <script src="./index.js"></script>
   </body>
 </html>
