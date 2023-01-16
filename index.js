@@ -5,7 +5,7 @@ const outputArea = document.getElementById("output");
 convertButton.addEventListener("click", () => {
   const input = inputArea.value;
 
-  let output = input.replace(/regularReels: /g, "regular: ");
+  let output = input.replace(/Reels: /g, ": ");
   output = output.replace(/(\b(?!\d)[a-zA-Z_]+\b)/g, '"$1"');
 
   outputArea.value = output;
